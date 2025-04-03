@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_blur"
+    >
+<!--    Icono-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/osrs_logo"
+                android:layout_centerInParent="true"
+                >
+
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+<!--    Inputs-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+<!--        Caja1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<!--            Label user-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textSize="30sp"
+                android:layout_centerInParent="true"
+                >
+
+            </TextView>
+        </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:hint="Ingrese usuario"
+                android:layout_centerInParent="true"
+
+                >
+
+            </EditText>
+        </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+<!--        Caja2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--            Label user-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clave"
+                        android:textSize="30sp"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:hint="Ingrese clave"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<!--    Boton-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/boton_inicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Iniciar sesión"
+                android:backgroundTint="@color/black"
+                android:textSize="30sp"
+                >
+
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
