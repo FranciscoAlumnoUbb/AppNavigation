@@ -39,8 +39,13 @@ public class MainActivity extends AppCompatActivity {
                   String prueba = userCapturado.getText().toString();
 //                Toast.makeText(MainActivity.this, "Usuario: " + prueba, Toast.LENGTH_SHORT).show();
                 if(iniciarSesion(userIn, PassIn)){
-                    startActivity(new Intent(MainActivity.this, MenuPrincipal.class));
+                    Intent intent = new Intent(MainActivity.this, MenuPrincipal.class);
+                    intent.putExtra("usuario", "userCapturado");
+                    startActivity(intent);
+                    finish();
+//                    startActivity(new Intent(MainActivity.this, MenuPrincipal.class));
                     Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+
                 }else{
                     Toast.makeText(MainActivity.this, "Credenciales invalidas", Toast.LENGTH_SHORT).show();
                 }

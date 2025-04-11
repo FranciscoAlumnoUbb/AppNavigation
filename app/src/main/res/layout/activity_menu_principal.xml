@@ -8,4 +8,72 @@
     tools:context=".MenuPrincipal"
     android:orientation="vertical">
 
+<!--    Caja para boton de lista de productos-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <ImageButton
+            android:id="@+id/botonLista"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/lista"
+            android:scaleType="fitXY">
+
+        </ImageButton>
+        </RelativeLayout>
+
+    </LinearLayout>
+<!--    Caja para boton de carrito de compras-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageButton
+                android:id="@+id/botonCarrito"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cart"
+                android:scaleType="fitXY">
+
+            </ImageButton>
+        </RelativeLayout>
+    </LinearLayout>
+<!--    Caja para boton de cerrar sesion-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <Button
+                android:id="@+id/botonCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cerrar Sesión"
+               android:layout_centerInParent="true"
+                android:backgroundTint="@color/black"
+                android:textSize="30sp"
+                >
+
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>
